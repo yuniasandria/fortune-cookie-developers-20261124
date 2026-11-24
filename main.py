@@ -1,6 +1,9 @@
 import os
 
-LINE = "The bug that disappears when you watch it is not fixed; it is only quietly waiting for your demo."
+PART_A = "The bug that disappears when you watch it is not fixed; "
+PART_B = "it is only quietly waiting for your demo."
+LINE = PART_A + PART_B
+assert "\n" not in LINE and len(LINE) == 97
 
 
 def main():
